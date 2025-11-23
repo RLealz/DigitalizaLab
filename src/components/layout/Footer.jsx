@@ -56,9 +56,6 @@ const Footer = () => {
                             <Youtube size={20} />
                         </a>
                     </div>
-                    <p className="text-gray-400 text-xs mt-4 md:mt-0">
-                        Website by Knit Studios
-                    </p>
                 </div>
             </div>
         </footer>
