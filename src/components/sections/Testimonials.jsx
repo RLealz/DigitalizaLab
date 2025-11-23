@@ -5,18 +5,18 @@ import { fadeInUp, staggerContainer } from '../../utils/animations';
 
 const testimonials = [
     {
-        quote: "Working with Nate and his team has been a truly positive experience. From the very beginning, the project was managed with a high level of professional...",
+        quote: "Working with DigitalizaLab has been a truly positive experience. From the very beginning, the project was managed with a high level of professional...",
         author: "Erich Rohn",
         title: "Managing Director, Rohn Moden",
         fullQuote: "Working with Nate and his team has been a truly positive experience. From the very beginning, the project was managed with a high level of professionalism and expertise." // Assuming full quote based on "See full testimonial" context, but keeping it truncated visually if desired or just showing full. Let's show full for cleaner UI unless requested otherwise. Actually user text had "See full testimonial", I'll just put the text provided and maybe a link or just the text. Let's stick to the text provided but clean it up."
     },
     {
-        quote: "Nate's teams bring clarity to complexity, turning ideas into AI systems that actually provide value.",
+        quote: "DigitalizaLab's teams bring clarity to complexity, turning ideas into AI systems that actually provide value.",
         author: "Nick Sonnenberg",
         title: "Founder & CEO, Leverage, WSJ Bestselling Author"
     },
     {
-        quote: "Nate builds more than workflows, he builds trust.",
+        quote: "DigitalizaLab builds more than workflows, they build trust.",
         author: "Jim Hankins",
         title: "CEO, Cloud Bedrock, LLC"
     }
