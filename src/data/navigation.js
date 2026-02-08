@@ -6,11 +6,11 @@ import { Linkedin, Youtube } from 'lucide-react';
  */
 export const navLinks = [
     { name: 'Home', href: '#hero' },
+    { name: 'Services', href: '#services' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'About', href: '#about' },
     { name: 'Case Studies', href: '#case-studies' },
     { name: 'Docs', href: '#docs' },
-    { name: 'Incubator', href: '#incubator' },
 ];
 
 /**
@@ -21,8 +21,9 @@ export const footerLinks = [
         title: 'Links',
         links: [
             { name: 'Home', href: '#hero' },
-            { name: 'Contact us', href: '#contact' },
+            { name: 'Services', href: '#services' },
             { name: 'Pricing', href: '#pricing' },
+            { name: 'Contact us', href: '#contact' },
         ],
     },
     {
