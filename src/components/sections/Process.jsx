@@ -1,30 +1,7 @@
 import React from 'react';
-import { Search, Code, Rocket, BarChart } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from '../../utils/animations';
-
-const steps = [
-    {
-        icon: Search,
-        title: 'Discovery',
-        description: 'We analyze your business needs and identify opportunities where AI can drive growth and efficiency.',
-    },
-    {
-        icon: Code,
-        title: 'Development',
-        description: 'Our team builds custom AI solutions tailored to your specific requirements using cutting-edge technology.',
-    },
-    {
-        icon: Rocket,
-        title: 'Deployment',
-        description: 'We seamlessly integrate the solution into your existing workflow and ensure a smooth launch.',
-    },
-    {
-        icon: BarChart,
-        title: 'Optimization',
-        description: 'Continuous monitoring and refinement to ensure your AI solution delivers maximum value over time.',
-    },
-];
+import { processSteps } from '../../data/process';
 
 const Process = () => {
     return (
@@ -48,9 +25,9 @@ const Process = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    {steps.map((step, index) => (
+                    {processSteps.map((step) => (
                         <motion.div
-                            key={index}
+                            key={step.title}
                             className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-transparent hover:border-primary/10"
                             variants={fadeInUp}
                             whileHover={{ y: -5 }}

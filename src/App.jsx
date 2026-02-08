@@ -6,20 +6,23 @@ import Testimonials from './components/sections/Testimonials';
 import Process from './components/sections/Process';
 import CTA from './components/sections/CTA';
 import Footer from './components/layout/Footer';
+import ErrorBoundary from './components/ui/ErrorBoundary';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <main>
-        <Hero />
-        <Features />
-        <Testimonials />
-        <Process />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+    <ErrorBoundary>
+      <div className="min-h-screen bg-white">
+        <Navbar />
+        <main id="main-content">
+          <Hero />
+          <Features />
+          <Testimonials />
+          <Process />
+          <CTA />
+        </main>
+        <Footer />
+      </div>
+    </ErrorBoundary>
   );
 }
 

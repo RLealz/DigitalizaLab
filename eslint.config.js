@@ -23,7 +23,8 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // Ignore uppercase vars (React components), and 'motion' (used as <motion.div> JSX member expression)
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]|^motion$', ignoreRestSiblings: true }],
     },
   },
 ])
